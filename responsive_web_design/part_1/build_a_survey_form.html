@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta chartset="utf-8">
+    <title>Harry Potter Survey</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time answering about Harry Potter</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Name<input id="name" type="text" placeholder="Enter your name" required /></label>
+        <label id="email-label" for="email">Email<input id="email" type="email" placeholder="Enter your email" required /></label>
+        <!-- TODO: validate email? -->
+        <label id="number-label" for="number">Age (optional)<input id="number" type="number" placeholder="Age" min="10" max="120" /></label>
+        <label>
+          <select id="dropdown">
+            <option value="1">Student</option>
+            <option value="2">Worker</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Which is your favorite Harry Potter book?</legend>
+        <label><input type="radio" class="inline" name="book" value="1" checked /> Harry Potter and the Philosopher's Stone</label>
+        <label><input type="radio" class="inline" name="book" value="2" /> Harry Potter and the Chamber of Secrets</label>
+        <label><input type="radio" class="inline" name="book" value="3" /> Harry Potter and the Prisoner of Azkaban</label>
+        <label><input type="radio" class="inline" name="book" value="4" /> Harry Potter and the Goblet of Fire</label>
+        <label><input type="radio" class="inline" name="book" value="5" /> Harry Potter and the Order of the Phoenix</label>
+        <label><input type="radio" class="inline" name="book" value="6" /> Harry Potter and the Half-Blood Prince</label>
+        <label><input type="radio" class="inline" name="book" value="7" /> Harry Potter and the Deathly Hallows</label>
+      </fieldset>
+      <fieldset>
+        <legend>Select which characters you like:</legend>
+      <label><input type="checkbox" class="inline" value="1" checked/> Harry Potter</label>
+      <label><input type="checkbox" class="inline" value="2"  /> Hermione Granger</label>
+      <label><input type="checkbox" class="inline" value="3"  /> Rony Weasley</label>
+      <label><input type="checkbox" class="inline" value="4"  /> Rubeos Hagrid</label>
+      <label><input type="checkbox" class="inline" value="5"  /> Dumbledore</label>
+      <label><input type="checkbox" class="inline" value="6"  /> Luna Lovegood</label>
+      <label><input type="checkbox" class="inline" value="7"  /> Draco Malfoy</label>
+      <label><input type="checkbox" class="inline" value="8"  /> Neville Longbottom</label>
+      </fieldset>
+      <fieldset>
+        <label>Any comments about Harry Potter?<textarea rows="5" cols="30"></textarea></label>
+      </fieldset>
+      <input id="submit" type="submit" />
+    </form>
+  </body>
+</html>
